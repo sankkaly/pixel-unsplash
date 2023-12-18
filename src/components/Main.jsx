@@ -8,7 +8,7 @@ function Main({query,orientation}) {
     const [photos, setPhotos] = useState([]);
     let photo;
     useEffect(()=>{
-        const getPhotos = async (query)=>{
+        const getPhotos = async (query,orientation)=>{
             if(query === null){
                 photo = await FetchPhotos(orientation);
                 setPhotos(photo);

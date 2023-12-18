@@ -15,7 +15,7 @@ randomUrl = `https://api.unsplash.com/photos/`;
 
 export const FetchPhotos = async (orientation)=> {
     try {
-        const fetchedPhotos = await fetch(`${randomUrl}?client_id=${accessKey}&per_page=${count}&orientation=${orientation}`);
+        const fetchedPhotos = await fetch(`${randomUrl}?client_id=${accessKey}&per_page=${count}${orientation ? `&orientation=${orientation}` : ''}`);
         const result = await fetchedPhotos.json();
         return result;
     } catch (error) {
@@ -25,7 +25,7 @@ export const FetchPhotos = async (orientation)=> {
 
 export const FetchPhotoSearch = async (query,orientation)=> {
     try {
-        const fetchedPhotos = await fetch(`${searchUrl}?client_id=${accessKey}&query=${query}&per_page=${count}&orientation=${orientation}`);
+        const fetchedPhotos = await fetch(`${searchUrl}?client_id=${accessKey}&query=${query}&per_page=${count}${orientation ? `&orientation=${orientation}` : ''}`);
         const searchResult = await fetchedPhotos.json();
         return searchResult.results;
     } catch (error) {
