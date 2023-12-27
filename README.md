@@ -1,8 +1,15 @@
-# React + Vite
+# Pixel-Unsplash React App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+https://pixel-unsplash.netlify.app/
 
-Currently, two official plugins are available:
+App is hosted on Netlify.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Pixel is made using Unsplash API to search images on internet.
+
+Most of the features are yet to be added in this app. for now its just a basic images search app.
+
+You can change the orientation of the images returned by search query.
+
+
+
+
